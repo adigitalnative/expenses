@@ -6,12 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-categories = Category.create([ { name: 'Advertising' },
-  { name: 'Reference Material' }, { name: 'Communication Expense' },
-  { name: 'Taxi/Car Rental' }, { name: 'Professional Research' },
-  { name: 'Professional Publications' }, { name: 'Professional Memberships' },
-  { name: 'Professional Fees' }, { name: 'Professional Education' },
-  { name: 'Professional Expenses' }, { name: 'Other Expenses' },
+categories = Category.create([ { name: 'Advertising' }, 
+  { name: 'Reference Material' }, { name: 'Communication Expense' }, 
+  { name: 'Taxi/Car Rental' }, { name: 'Professional Research' }, 
+  { name: 'Professional Publications' }, { name: 'Professional Memberships' }, 
+  { name: 'Professional Fees' }, { name: 'Professional Education' }, 
+  { name: 'Professional Expenses' }, { name: 'Other Expenses' }, 
   { name: 'Agent and Manager Fees' }, ])
 
 advertising = ExpenseClass.create([ { name: 'Business Supplies', category: categories[0] },
