@@ -1,0 +1,27 @@
+<h2><%= @category.name %></h2>
+
+<table>
+  <% @expense_classes.each do |ec| %>
+    <tr>
+      <td><h4><%= ec[:class_name] %> <small><%= link_to "Add Expense", new_expense_class_expense_path(ec[:class_id]) %></h4></td>
+    </tr>
+    <% ec[:expenses].each do |expense| %>
+      <tr>
+        <td><%= expense.date %></td>
+        <td><%= expense.description %></td>
+        <td>$ <%= expense.value_in_dollars.join(".") %></td>
+        <td><%= expense.project.name %></td>
+        <td><%= link_to "Edit", "#" %> | <%= link_to "Delete", "#" %></td>
+      </tr>
+    <% end %>
+    <% unless ec[:expenses].count == 0 %>
+      <tr>
+        <td>&nbsp;</td>
+        <td><strong>Total</strong></td>
+        <td><strong>$ <%= category_subtotal(ec) %></strong></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    <% end %>
+  <% end %>
+</table>

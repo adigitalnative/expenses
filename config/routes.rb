@@ -1,4 +1,18 @@
 ActorExpenses::Application.routes.draw do
+  resources :categories do
+    resources :expense_classes
+    resource :summary
+  end
+
+  resources :expense_classes do
+    resources :expenses
+  end
+
+  resources :projects
+
+  resource :dashboard
+
+  root to: 'categories#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
