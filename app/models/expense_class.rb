@@ -3,4 +3,6 @@ class ExpenseClass < ActiveRecord::Base
 
   has_many :expenses
   belongs_to :category
+
+  validates :name, presence: true
 end
