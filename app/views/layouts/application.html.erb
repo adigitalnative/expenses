@@ -13,7 +13,43 @@
 
   <body>
 
-    <%= yield %>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar">
+          <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+          </section>
+
+          <section class="middle tab-bar-section">
+            <h1 class="title">Actor Expenses</h1>
+          </section>
+        </nav>
+
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>Your Expenses</label>
+            <li><%= link_to "Summary Dashboard", dashboard_path %></li>
+            <% expense_categories.each do |category| %>
+              <li><%= link_to category.name, "#" %></li>
+            <% end %>
+            <li><label>Settings</label></li>
+            <li><%= link_to "Categories & Expense types", categories_path %></li>
+          </ul>
+        </aside>
+
+        <section class="main-section">
+
+          <%= yield %>
+        
+        </section>
+
+      <a class="exit-off-canvas"></a>
+
+      </div>
+    </div>
+
+
+    
     <%= javascript_include_tag "application" %>
   </body>
 </html>
