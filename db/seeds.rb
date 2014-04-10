@@ -56,20 +56,20 @@ memberships = ExpenseClass.create([ { name: 'SAG', category: categories[6] },
 fees = ExpenseClass.create([ { name: 'SAG', category: categories[7] },
                   { name: 'AFTRA', category: categories[7] } ])
 
-education = ExpenseClass.create([ { name: 'Acting Lessons', category: categories[7] },
-                  { name: 'Voice Lessons', category: categories[7] },
-                  { name: 'Dance Lessons', category: categories[7] },
-                  { name: 'Conferences & Seminars', category: categories[7] } ])
+education = ExpenseClass.create([ { name: 'Acting Lessons', category: categories[8] },
+                  { name: 'Voice Lessons', category: categories[8] },
+                  { name: 'Dance Lessons', category: categories[8] },
+                  { name: 'Conferences & Seminars', category: categories[8] } ])
 
-expenses = ExpenseClass.create([ { name: 'Dancewear & Shoes', category: categories[8] },
-                  { name: 'Costumes & Props', category: categories[8] },
-                  { name: 'Costume/Dancewear cleaning', category: categories[8] },
-                  { name: 'Makeup & Hair', category: categories[8] },
-                  { name: 'Backstage Tips', category: categories[8] } ])
+expenses = ExpenseClass.create([ { name: 'Dancewear & Shoes', category: categories[9] },
+                  { name: 'Costumes & Props', category: categories[9] },
+                  { name: 'Costume/Dancewear cleaning', category: categories[9] },
+                  { name: 'Makeup & Hair', category: categories[9] },
+                  { name: 'Backstage Tips', category: categories[9] } ])
 
-other_expenses = ExpenseClass.create([ { name: 'Equipment/Instrument Repair', category: categories[9] },
-                  { name: 'Rehearsal Studios', category: categories[9] },
-                  { name: 'Accompaniests/Musicians', category: categories[9] },
-                  { name: 'Hired Labor/Contract Labor', category: categories[9] } ])
+other_expenses = ExpenseClass.create([ { name: 'Equipment/Instrument Repair', category: categories[10] },
+                  { name: 'Rehearsal Studios', category: categories[10] },
+                  { name: 'Accompaniests/Musicians', category: categories[10] },
+                  { name: 'Hired Labor/Contract Labor', category: categories[10] } ])
 
-agent = ExpenseClass.create([ { name: 'Agent & Manager Fees', category: categories[10] } ])
+agent = ExpenseClass.create([ { name: 'Agent & Manager Fees', category: categories[11] } ])
