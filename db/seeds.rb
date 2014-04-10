@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+puts "Loading Categories..."
 categories = Category.create([ { name: 'Advertising' }, 
   { name: 'Reference Material' }, { name: 'Communication Expense' }, 
   { name: 'Taxi/Car Rental' }, { name: 'Professional Research' }, 
@@ -14,6 +15,7 @@ categories = Category.create([ { name: 'Advertising' },
   { name: 'Professional Expenses' }, { name: 'Other Expenses' }, 
   { name: 'Agent and Manager Fees' }, ])
 
+puts "Loading Expense Classes..."
 advertising = ExpenseClass.create([ { name: 'Business Supplies', category: categories[0] },
                   { name: 'Photos and Resumes', category: categories[0] },
                   { name: 'Postage, FedEx, Delivery', category: categories[0] },
@@ -73,3 +75,5 @@ other_expenses = ExpenseClass.create([ { name: 'Equipment/Instrument Repair', ca
                   { name: 'Hired Labor/Contract Labor', category: categories[10] } ])
 
 agent = ExpenseClass.create([ { name: 'Agent & Manager Fees', category: categories[11] } ])
+
+puts "Seed Data Loaded."

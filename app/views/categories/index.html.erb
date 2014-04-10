@@ -1,0 +1,10 @@
+<h2>Categories <small><%= link_to "Add New", new_category_path %></h2>
+<% @categories.each do |category| %>
+  <div id="category_<%= category.id %>">
+    <h3><%= category.name %> <small><%= link_to "Edit", edit_category_path(category.id) %> | <%= link_to "Delete", category_path(category.id), method: "delete" %></h3>
+    <ul>
+      <% category.expense_classes.each do |expense| %>
+        <p><%= expense.name %></p>
+      <% end %>
+  </div>
+<% end %>
