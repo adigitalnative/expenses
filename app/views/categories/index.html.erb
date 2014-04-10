@@ -1,13 +1,12 @@
 <h2>Categories <small><%= link_to "Add New", new_category_path %></h2>
-<% @categories.each do |category| %>
-  <div id="category_<%= category.id %>">
-    <h3><%= category.name %> <small><%= link_to "Edit", edit_category_path(category.id) %> | <%= link_to "Delete", category_path(category.id), method: "delete" %></small></h3>
-    <ul>
+<ul class="small-block-grid-1 medium-block-grid-2">
+  <% @categories.each do |category| %>
+    <li id="category_<%= category.id %>">
+      <h3><%= category.name %> <small><%= link_to "Edit", edit_category_path(category.id) %> | <%= link_to "Delete", category_path(category.id), method: "delete" %></small></h3>
       <% category.expense_classes.each do |expense| %>
         <p><%= expense.name %> <%= link_to "Edit", edit_category_expense_class_path(category, expense) %> | <%= link_to "Delete", category_expense_class_path(category, expense), method: "delete" %> </p>
       <% end %>
-  </div>
-  <div>
-    <p><%= link_to "Add Expense Type", new_category_expense_class_path(category) %></p>
-  </div>
-<% end %>
+      <%= link_to "Add Expense Type", new_category_expense_class_path(category), class: "button tiny right small-12" %>
+    </li>
+  <% end %>
+</ul>
