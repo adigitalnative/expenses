@@ -1,0 +1,10 @@
+<h2>Projects <small><%= link_to "Add Project", new_project_path %></h2>
+
+<% @projects.each do |project| %>
+  <div>
+    <h3><%= project.name %></h3>
+    <p>Project Start: <%= project.start %></p>
+    <p>Project End: <%= project.end %></p>
+    <p><%= link_to "Edit", edit_project_path(project.id) %> | <%= link_to "Delete", project_path(project.id), method: "delete" %></p>
+  </div>
+<% end %>

@@ -8,6 +8,8 @@ ActorExpenses::Application.routes.draw do
     resources :expenses
   end
 
+  resources :projects
+
   resource :dashboard
 
   root to: 'categories#index'

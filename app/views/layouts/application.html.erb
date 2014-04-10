@@ -33,6 +33,7 @@
               <li><%= link_to category.name, category_summary_path(category.id) %></li>
             <% end %>
             <li><label>Settings</label></li>
+            <li><%= link_to "Projects", projects_path %></li>
             <li><%= link_to "Categories & Expense types", categories_path %></li>
           </ul>
         </aside>
