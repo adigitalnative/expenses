@@ -26,46 +26,50 @@ reference = ExpenseClass.create([ { name: 'Reference Books, Scripts, Plays', cat
                   { name: 'Audio Reference, CDs, iTunes', category: categories[1] },
                   { name: 'Visual Reference & DVDs', category: categories[1] } ])
 
-transport = ExpenseClass.create([ { name: 'Taxis & Limos', category: categories[2] },
-                  { name: 'Subway & public transport', category: categories[2] },
-                  { name: 'Other Local Travel', category: categories[2] } ])
+communication = ExpenseClass.create([ { name: 'Cellular Phone', category: categories[2] },
+                  { name: 'Answering Service, Pager', category: categories[2] },
+                  { name: 'Home Phone Business Use', category: categories[2] } ])
 
-research = ExpenseClass.create([ { name: 'Video & DVD Rentals', category: categories[3] },
-                  { name: 'Cable TV', category: categories[3] },
-                  { name: 'Live Theatre Tickets', category: categories[3] },
-                  { name: 'Movies', category: categories[3] },
-                  { name: 'Concerts & Museums', category: categories[3] },
-                  { name: 'Internet Access Charges', category: categories[3] },
-                  { name: 'Other Research', category: categories[3] } ])
+transport = ExpenseClass.create([ { name: 'Taxis & Limos', category: categories[3] },
+                  { name: 'Subway & public transport', category: categories[3] },
+                  { name: 'Other Local Travel', category: categories[3] } ])
 
-publications = ExpenseClass.create([ { name: 'Backstage', category: categories[4] },
-                  { name: 'Variety', category: categories[4] },
-                  { name: 'Ross Reports', category: categories[4] },
-                  { name: 'Other', category: categories[4] } ])
+research = ExpenseClass.create([ { name: 'Video & DVD Rentals', category: categories[4] },
+                  { name: 'Cable TV', category: categories[4] },
+                  { name: 'Live Theatre Tickets', category: categories[4] },
+                  { name: 'Movies', category: categories[4] },
+                  { name: 'Concerts & Museums', category: categories[4] },
+                  { name: 'Internet Access Charges', category: categories[4] },
+                  { name: 'Other Research', category: categories[4] } ])
 
-memberships = ExpenseClass.create([ { name: 'SAG', category: categories[5] },
-                  { name: 'AFTRA', category: categories[5] },
-                  { name: 'AEA', category: categories[5] },
-                  { name: 'AEA % Dues', category: categories[5] },
-                  { name: 'Other Prof. Memberships', category: categories[5] } ])
+publications = ExpenseClass.create([ { name: 'Backstage', category: categories[5] },
+                  { name: 'Variety', category: categories[5] },
+                  { name: 'Ross Reports', category: categories[5] },
+                  { name: 'Other', category: categories[5] } ])
 
-fees = ExpenseClass.create([ { name: 'SAG', category: categories[6] },
-                  { name: 'AFTRA', category: categories[6] } ])
+memberships = ExpenseClass.create([ { name: 'SAG', category: categories[6] },
+                  { name: 'AFTRA', category: categories[6] },
+                  { name: 'AEA', category: categories[6] },
+                  { name: 'AEA % Dues', category: categories[6] },
+                  { name: 'Other Prof. Memberships', category: categories[6] } ])
 
-education = ExpenseClass.create([ { name: 'Acting Lessons', category: categories[6] },
-                  { name: 'Voice Lessons', category: categories[6] },
-                  { name: 'Dance Lessons', category: categories[6] },
-                  { name: 'Conferences & Seminars', category: categories[6] } ])
+fees = ExpenseClass.create([ { name: 'SAG', category: categories[7] },
+                  { name: 'AFTRA', category: categories[7] } ])
 
-expenses = ExpenseClass.create([ { name: 'Dancewear & Shoes', category: categories[7] },
-                  { name: 'Costumes & Props', category: categories[7] },
-                  { name: 'Costume/Dancewear cleaning', category: categories[7] },
-                  { name: 'Makeup & Hair', category: categories[7] },
-                  { name: 'Backstage Tips', category: categories[7] } ])
+education = ExpenseClass.create([ { name: 'Acting Lessons', category: categories[7] },
+                  { name: 'Voice Lessons', category: categories[7] },
+                  { name: 'Dance Lessons', category: categories[7] },
+                  { name: 'Conferences & Seminars', category: categories[7] } ])
 
-other_expenses = ExpenseClass.create([ { name: 'Equipment/Instrument Repair', category: categories[8] },
-                  { name: 'Rehearsal Studios', category: categories[8] },
-                  { name: 'Accompaniests/Musicians', category: categories[8] },
-                  { name: 'Hired Labor/Contract Labor', category: categories[8] } ])
+expenses = ExpenseClass.create([ { name: 'Dancewear & Shoes', category: categories[8] },
+                  { name: 'Costumes & Props', category: categories[8] },
+                  { name: 'Costume/Dancewear cleaning', category: categories[8] },
+                  { name: 'Makeup & Hair', category: categories[8] },
+                  { name: 'Backstage Tips', category: categories[8] } ])
 
-agent = ExpenseClass.create([ { name: 'Agent & Manager Fees', category: categories[9] } ])
+other_expenses = ExpenseClass.create([ { name: 'Equipment/Instrument Repair', category: categories[9] },
+                  { name: 'Rehearsal Studios', category: categories[9] },
+                  { name: 'Accompaniests/Musicians', category: categories[9] },
+                  { name: 'Hired Labor/Contract Labor', category: categories[9] } ])
+
+agent = ExpenseClass.create([ { name: 'Agent & Manager Fees', category: categories[10] } ])
