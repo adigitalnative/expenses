@@ -1,0 +1,11 @@
+<h2><%= @category.name %></h2>
+
+<table>
+  <% @expense_classes.each do |ec| %>
+    <tr>
+      <td><%= ec[:class_name] %> <small><%= link_to "Add Expense", new_expense_class_expense_path(ec[:class_id]) %></td>
+    </tr>
+    <% ec[:expenses].each do |expense| %>
+
+    <% end %>
+  <% end %>

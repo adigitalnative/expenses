@@ -1,6 +1,11 @@
 ActorExpenses::Application.routes.draw do
   resources :categories do
     resources :expense_classes
+    resource :summary
+  end
+
+  resources :expense_classes do
+    resources :expenses
   end
 
   resource :dashboard
